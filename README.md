@@ -1,24 +1,24 @@
-### Doctor Management System Assignment for Bluecrimson
+# Doctor Management System Assignment for Bluecrimson
 A comprehensive React + TypeScript application for managing healthcare staff registration and doctor availability scheduling.
 
 
-### Setup Of The Project
+## Setup Of The Project
 First i created the app using:- npm create vite@latest
 
 
 
-### Core Dependencies
-# State Management & Forms
+# Core Dependencies
+## State Management & Forms
 React Hook Form (^7.65.0) - Efficient form handling with minimal re-renders
 
 Zod (^4.1.12) - TypeScript-first schema validation
 
 @hookform/resolvers (^5.2.2) - Integration between React Hook Form and Zod
 
-# Date & Time Management
+## Date & Time Management
 date-fns (^4.1.0) - Modern date utility library for time slot management
 
-# UI & Styling
+## UI & Styling
 Tailwind CSS - Utility-first CSS framework for responsive design
 
 Lucide React (^0.546.0) - Beautiful & consistent icons
@@ -27,35 +27,35 @@ Radix UI (^1.4.3) - Unstyled, accessible UI components
 
 clsx (^2.1.1) & tailwind-merge (^3.3.1) - Conditional CSS class management
 
-# User Experience
+## User Experience
 Sonner (^2.0.7) - Elegant toast notifications for user feedback
 
-# Development Utilities
+## Development Utilities
 Class Variance Authority (^0.7.1) - For building type-safe UI components
 
 Tailwind Variants (^3.1.1) - Enhanced Tailwind with variant support
 
-# Architecture Decisions
+## Architecture Decisions
 a) State Management
 b) Context API: Used for global state management to avoid external dependencies
 
 c) Local State: React useState for component-specific state
 
-# Form Handling Strategy
+## Form Handling Strategy
 a) React Hook Form for performance (minimal re-renders)
 
 b) Zod for runtime type safety and validation
 
 c) Custom validation resolvers for complex business rules
 
-# Styling Approach
+## Styling Approach
 a) Tailwind CSS for rapid UI development
 
 b) CSS Modules for component-scoped styles
 
 c) Responsive design with mobile-first approach
 
-# Project Structure Rationale
+## Project Structure Rationale
 
 src/
 ├── contexts/           # Global state management
@@ -75,8 +75,8 @@ d) Scalability: Can easily add new features without restructuring
 
 
 
-### Features
-# 1 User Management Module
+# Features
+## 1 User Management Module
 
 a) User Registration: Complete registration form for healthcare staff
 
@@ -109,7 +109,7 @@ e) Edit Functionality: Update user details and delete user with delete modal
 
 f) Form Validations: Comprehensive client-side validations
 
-### 2 Doctor Availability Module
+## 2 Doctor Availability Module
 a) Availability Scheduling: Add multiple time slots for doctors
 
 ![alt text](<Screenshot (145).png>)
@@ -130,7 +130,7 @@ d) Conflict Prevention: Prevents overlapping time slots
 
 e) Intuitive UI: User-friendly scheduling interface
 
-### Technical Stack
+## Technical Stack
 a) Frontend: React 18 + TypeScript
 
 b) State Management: React Context API
