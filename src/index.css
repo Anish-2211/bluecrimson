@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* Your design system - UNCOMMENTED and UPDATED for Tailwind v4 */
+@theme {
+  /* Light theme */
+  --color-background: hsl(210 20% 98%);
+  --color-foreground: hsl(215 25% 15%);
+  
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(215 25% 15%);
+  
+  --color-primary: hsl(199 89% 48%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  
+  --color-secondary: hsl(210 15% 95%);
+  --color-secondary-foreground: hsl(215 25% 15%);
+  
+  --color-muted: hsl(210 15% 96%);
+  --color-muted-foreground: hsl(215 15% 45%);
+  
+  --color-accent: hsl(180 75% 45%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  
+  --color-success: hsl(142 71% 45%);
+  --color-success-foreground: hsl(0 0% 100%);
+  
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  
+  --color-border: hsl(214 20% 90%);
+  --color-input: hsl(214 20% 90%);
+  
+  --radius: 0.75rem;
+}
+
+/* Dark theme */
+/* @theme (prefers-color-scheme: dark) {
+  --color-background: hsl(215 30% 8%);
+  --color-foreground: hsl(210 15% 95%);
+  
+  --color-card: hsl(215 28% 12%);
+  --color-card-foreground: hsl(210 15% 95%);
+  
+  --color-primary: hsl(199 89% 48%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  
+  --color-secondary: hsl(215 25% 18%);
+  --color-secondary-foreground: hsl(210 15% 95%);
+  
+  --color-muted: hsl(215 25% 18%);
+  --color-muted-foreground: hsl(215 15% 65%);
+  
+  --color-border: hsl(215 25% 20%);
+  --color-input: hsl(215 25% 20%);
+} */
+
+/* Base styles */
+/* {
+  border-color: hsl(var(--border));
+} */
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+/* Utility classes */
+.gradient-primary {
+  background: linear-gradient(135deg, hsl(199 89% 48%), hsl(180 75% 45%));
+}
+
+.gradient-subtle {
+  background: linear-gradient(180deg, hsl(210 20% 98%), hsl(0 0% 100%));
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 8px -2px hsl(215 25% 15% / 0.08);
+}
+
+.shadow-medium {
+  box-shadow: 0 4px 16px -4px hsl(215 25% 15% / 0.12);
+}
+
+.shadow-elevated {
+  box-shadow: 0 8px 24px -8px hsl(215 25% 15% / 0.16);
+}
+
+.transition-smooth {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
